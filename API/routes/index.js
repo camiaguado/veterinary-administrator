@@ -7,6 +7,11 @@ module.exports = function() {
     router.post('/pacientes',
         pacienteController.nuevoCliente
     );
+
+    // Get all pacients from the database
+    router.get('/pacientes',
+        pacienteController.obtenerClientes
+    );
     
     return router;
 }
