@@ -6,7 +6,7 @@ module.exports = function() {
     // Add new pacients throw POST
     router.post('/pacientes',
         pacienteController.nuevoCliente
-    )
+    );
     
     return router;
 }
