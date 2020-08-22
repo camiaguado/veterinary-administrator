@@ -1,0 +1,31 @@
+{
+  "name": "pacientes-api",
+  "version": "1.0.0",
+  "description": "Backend developed using Mongo and Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camiaguado/pacients-administrator.git"
+  },
+  "keywords": [
+    "Mongo",
+    "Express",
+    "API"
+  ],
+  "author": "Camila Aguado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camiaguado/pacients-administrator/issues"
+  },
+  "homepage": "https://github.com/camiaguado/pacients-administrator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
