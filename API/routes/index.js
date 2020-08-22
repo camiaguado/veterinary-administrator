@@ -17,5 +17,16 @@ module.exports = function() {
     router.get('/pacientes/:clientId',
         pacienteController.obtenerCliente
     );
+
+    // Update register by id
+    router.put('/pacientes/:clientId',
+        pacienteController.actualizarCliente
+    );
+
+    // Delete register by id
+    router.delete('/pacientes/:clientId',
+        pacienteController.eliminarPaciente
+    );
+
     return router;
 }
