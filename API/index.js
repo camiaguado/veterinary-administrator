@@ -1,6 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-
+const routes = require('./routes')
 // Create Server:
 const app = express();
 
@@ -11,6 +11,9 @@ mongoose.connect('mongodb://localhost/veterinary', {
     useUnifiedTopology: true,
     useFindAndModify: false
 });
+
+// Enable routings
+app.use('/', routes())
 // Port and start server:
 app.listen(4000, () => {
     console.log('The server is working...');
