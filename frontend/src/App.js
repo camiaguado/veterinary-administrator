@@ -41,8 +41,8 @@ function App() {
        <Route exact path="/cita/:id" 
               render={(props)=>{
                 const cita = citas.filter(cita => cita._id === props.match.params.id)
-                console.log(cita)
-                return (<Cita cita={cita}/>)
+                
+                return (<Cita cita={cita[0]} guardarConsultar={guardarConsultar}/>)
                }} />
      </Switch>
    </Router>
