@@ -115,7 +115,8 @@ const NuevaCita = (props) => {
                     <div className="form-group">
                         <label htmlFor="sintomas">Síntomas</label>
                         <textarea 
-                            className="form-control" 
+                            className="form-control"
+                            id="sintomas" 
                             name="sintomas" 
                             rows="6"
                             onChange={actualizarState}
@@ -123,7 +124,7 @@ const NuevaCita = (props) => {
                     </div>
 
 
-                    <input type="submit" className="btn btn-primary mt-3 w-100 p-3 text-uppercase font-weight-bold" value="Crear Cita"  />
+                    <input type="submit" id="crear-cita" className="btn btn-primary mt-3 w-100 p-3 text-uppercase font-weight-bold" value="Crear Cita"  />
                 </form>
             </div>
         </Fragment>
