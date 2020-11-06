@@ -38,7 +38,12 @@ function App() {
      <Switch>
        <Route exact path="/" component={() => <Pacientes citas={citas}/>} />
        <Route exact path="/nueva" component={() => <NuevaCita guardarConsultar={guardarConsultar} />} />
-       <Route exact path="/cita/:id" component={Cita} />
+       <Route exact path="/cita/:id" 
+              render={(props)=>{
+                const cita = citas.filter(cita => cita._id === props.match.params.id)
+                console.log(cita)
+                return (<Cita cita={cita}/>)
+               }} />
      </Switch>
    </Router>
   
